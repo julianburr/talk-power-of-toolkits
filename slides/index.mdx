@@ -1,0 +1,507 @@
+import myTheme, { Styles } from './theme';
+export const theme = myTheme;
+
+import knifePath from './assets/knife.svg';
+import sitemapPath from './assets/sitemap.svg';
+import chatPath from './assets/chat.svg';
+import rocketPath from './assets/rocket.svg';
+import lockPath from './assets/lock.svg';
+import clockPath from './assets/clock.svg';
+import magicPath from './assets/magic.svg';
+import finishPath from './assets/finish.svg';
+
+import packageJsonPath from './assets/code/toolkit-package-json.png';
+import examplePath from './assets/code/example.png';
+import bundleSquarePath from './assets/code/example-01-square.png';
+import bundleRandomPath from './assets/code/example-01-random.png';
+import bundleMainPath from './assets/code/example-01-main.png';
+import compileSquarePath from './assets/code/example-02-square.png';
+import compileRandomPath from './assets/code/example-02-random.png';
+import compileMainPath from './assets/code/example-02-main.png';
+import testSquarePath from './assets/code/example-03-square.png';
+import testMainPath from './assets/code/example-03-main.png';
+import webpackConfigPath from './assets/code/webpack-config.png';
+import babelConfigPath from './assets/code/babel-config.png';
+import jestConfigPath from './assets/code/jest-config.png';
+import jestSetupPath from './assets/code/jest-setup.png';
+import bootstrappingPath from './assets/code/bootstrapping.png';
+
+import Container from './components/Container';
+import Heading from './components/Heading';
+import Text from './components/Text';
+import Small from './components/Small';
+
+<Container>
+  <img
+    src={knifePath}
+    style={{ height: '30vh', width: 'auto', marginBottom: 30 }}
+  />
+  <Heading yellow style={{ fontSize: '10vh' }}>
+    The Power of
+    <br />
+    toolkits
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <Heading>
+    What are
+    <br />
+    toolkits?
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={packageJsonPath}
+    style={{
+      width: '50vw',
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+    }}
+  />
+</Container>
+
+---
+
+<Container>
+  <Heading>
+    Why do we
+    <br />
+    need them?
+  </Heading>
+</Container>
+
+---
+
+<Container style={{ flexDirection: 'row' }}>
+  <div
+    style={{
+      display: 'flex',
+      width: '50%',
+      paddingRight: '10vh'
+    }}
+  >
+    <img
+      src={examplePath}
+      style={{
+        width: '100%',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+  </div>
+  <div
+    style={{
+      display: 'flex',
+      flex: 1,
+      flexDirection: 'column'
+    }}
+  />
+</Container>
+
+---
+
+<Container
+  style={{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start'
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      width: '50%',
+      paddingRight: '10vh',
+      flexDirection: 'column'
+    }}
+  >
+    <img
+      src={bundleSquarePath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+    <img
+      src={bundleRandomPath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+    <img
+      src={bundleMainPath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+  </div>
+  <div
+    style={{
+      display: 'flex',
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'flex-start'
+    }}
+  >
+    <Text>1. Bundle</Text>
+    <Small yellow>Webpack</Small>
+    <Small yellow>Rollup</Small>
+    <Small yellow>Parcel</Small>
+    <Small yellow>Gulp</Small>
+    <Small yellow>...</Small>
+  </div>
+</Container>
+
+---
+
+<Container
+  style={{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start'
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      width: '50%',
+      paddingRight: '10vh',
+      flexDirection: 'column'
+    }}
+  >
+    <img
+      src={compileSquarePath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+    <img
+      src={compileRandomPath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+    <img
+      src={compileMainPath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+  </div>
+  <div
+    style={{
+      display: 'flex',
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'flex-start'
+    }}
+  >
+    <Text>1. Bundle</Text>
+    <Text>2. Compile</Text>
+    <Small yellow>Babel</Small>
+    <Small yellow>Sucrase</Small>
+    <Small yellow>swc</Small>
+    <Small yellow>...</Small>
+  </div>
+</Container>
+
+---
+
+<Container
+  style={{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start'
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      width: '50%',
+      paddingRight: '10vh',
+      flexDirection: 'column'
+    }}
+  >
+    <img
+      src={testSquarePath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+    <img
+      src={testMainPath}
+      style={{
+        width: '100%',
+        marginBottom: '2vh',
+        boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+      }}
+    />
+  </div>
+  <div
+    style={{
+      display: 'flex',
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'flex-start'
+    }}
+  >
+    <Text>1. Bundle</Text>
+    <Text>2. Compile</Text>
+    <Text>3. Test</Text>
+    <Small yellow>Jest</Small>
+    <Small yellow>Mocha</Small>
+    <Small yellow>Jasmine</Small>
+    <Small yellow>...</Small>
+  </div>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={webpackConfigPath}
+    style={{
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)',
+      position: 'absolute',
+      height: '100vh',
+      bottom: '-6vh',
+      left: '3vh',
+      zIndex: 1
+    }}
+  />
+  <img
+    src={jestSetupPath}
+    style={{
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)',
+      position: 'absolute',
+      height: '75vh',
+      bottom: '-6vh',
+      left: '20vw',
+      zIndex: 2
+    }}
+  />
+  <img
+    src={jestConfigPath}
+    style={{
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)',
+      position: 'absolute',
+      height: '48vh',
+      width: 'auto',
+      bottom: '-5vh',
+      left: '50vw',
+      zIndex: 3
+    }}
+  />
+  <img
+    src={babelConfigPath}
+    style={{
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)',
+      position: 'absolute',
+      height: '91vh',
+      bottom: '-57vh',
+      left: '6vw',
+      zIndex: 4
+    }}
+  />
+</Container>
+
+---
+
+<Container>
+  <Text>Bootstrapping</Text>
+  <img
+    src={bootstrappingPath}
+    style={{
+      marginTop: '2vh',
+      width: '50vw',
+      boxShadow: '0 7px 20px rgba(0, 0, 0, .4)'
+    }}
+  />
+</Container>
+
+---
+
+<Container>
+  <Heading>
+    What are
+    <br />
+    the benefits?
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={sitemapPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Centralised
+    <br />
+    configs
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={chatPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Enforce best
+    <br />
+    practises
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={rocketPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Speed up new
+    <br />
+    projects and
+    <br />
+    prototypes
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <Heading>
+    What are the
+    <br />
+    trade-offs?
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={lockPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Limited
+    <br />
+    config
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={clockPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Delayed
+    <br />
+    access to new
+    <br />
+    features
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <img
+    src={magicPath}
+    style={{
+      height: '30vh',
+      paddingBottom: '3vh'
+    }}
+  />
+  <Heading yellow>
+    Hidden tooling
+    <br />= black magic
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <Heading>
+    So, are they
+    <br />
+    worth it?
+  </Heading>
+</Container>
+
+---
+
+<Container>
+  <Heading yellow style={{ fontSize: '20vh' }}>
+    The end
+  </Heading>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'flex-end',
+      position: 'absolute',
+      left: '8vh',
+      bottom: '8vh'
+    }}
+  >
+    <img src={finishPath} style={{ height: '30vh' }} />
+    <div
+      style={{
+        fontSize: '3vh',
+        marginLeft: '-7vh',
+        color: '#DEC055',
+        opacity: 0.8
+      }}
+    >
+      Julian Burr
+      <br />
+      @jburr90
+    </div>
+  </div>
+</Container>

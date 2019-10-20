@@ -1,0 +1,30 @@
+{
+  "name": "talk-redux-is-not-dead",
+  "version": "0.0.0",
+  "dependencies": {
+    "mdx-deck": "^3.0.9",
+    "node-fetch": "^2.6.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "scripts": {
+    "start:slides": "mdx-deck slides/index.mdx",
+    "build:slides": "mdx-deck build slides/index.mdx"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
